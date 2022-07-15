@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <script src="main.js"></script>
+    <title>The Mega Cart</title>
+</head>
+<body onload="display()" id="body">
+    <div id="head">
+    <button onclick="logout()" id="log">Logout</button>
+    <p id="date"></p>
+    </div>
+    <h1 id="data"></h1>
+    <h4 id="info">Please click on an item to add it to cart</h4>
+    <div id="contain">
+        <div id="row">
+            <div id="border" onclick="added(1)">
+                <img src="images/clothing.jpg" alt="clothing" id="clothing" class="img">
+                <h4 id="tag">Clothing</h4>
+            </div>
+            <div id="border" onclick="added(2)">
+                <img src="images/footwear.jpg" alt="footwear" id="footwear" class="img">
+                <h4 id="tag">Footwear</h4>
+            </div>
+        </div>
+        <div id="row">
+            <div id="border" onclick="added(3)">
+                <img src="images/health.jpg" alt="health" id="health" class="img">
+                <h4 id="tag">Health</h4>
+            </div>
+            <div id="border" onclick="added(4)">
+                <img src="images/school.jpg" alt="school" id="school" class="img">
+                <h4 id="tag">School</h4>
+            </div>
+        </div>
+        <button onclick="cart()" id="but">Click Here to View Cart</button>
+    </div>
+</body>
+</html>

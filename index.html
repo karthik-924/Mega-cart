@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+    <script src="login.js"></script>
+</head>
+<body class="color">
+    <h1 class="center">The Mega Cart</h1>
+    <div class="form">
+    <div class="user">
+        <label for="username">Enter username:</label>
+        <input type="text" id="username" name="username" required>
+    </div>
+    <div class="pass">
+        <label for="password">Enter password:</label>
+        <input type="password" id="password" name="password" minlength="8" required>
+    </div>
+    </div> 
+    <p id="error"></p>
+    <button onclick="checking()" class="login">Login</button>
+    <p class="new">New user! Sign up here <a href="sign-up.html">Sign up</a></p>
+</body>
+</html>
